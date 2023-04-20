@@ -1,0 +1,1908 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:14:52.000Z' - '2023-01-20T14:18:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "second",
+  "dateTimeUnitData": "second",
+  "majorDateTimeUnit": "minute",
+  "majorFormat": "ff",
+  "minorFormat": "s"",
+  "step": 10,
+  "stepData": 5,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T14:17:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "second",
+  "dateTimeUnitData": "second",
+  "majorDateTimeUnit": "minute",
+  "majorFormat": "ff",
+  "minorFormat": "s"",
+  "step": 10,
+  "stepData": 2,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T14:25:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "second",
+  "dateTimeUnitData": "second",
+  "majorDateTimeUnit": "minute",
+  "majorFormat": "ff",
+  "minorFormat": "s"",
+  "step": 30,
+  "stepData": 10,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T15:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "minute",
+  "dateTimeUnitData": "minute",
+  "majorDateTimeUnit": "hour",
+  "majorFormat": "DD, H'h'",
+  "minorFormat": "m’",
+  "step": 5,
+  "stepData": 1,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T17:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "minute",
+  "dateTimeUnitData": "minute",
+  "majorDateTimeUnit": "hour",
+  "majorFormat": "DD, H'h'",
+  "minorFormat": "m’",
+  "step": 10,
+  "stepData": 5,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T00:15:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "minute",
+  "dateTimeUnitData": "minute",
+  "majorDateTimeUnit": "hour",
+  "majorFormat": "DD, H'h'",
+  "minorFormat": "m’",
+  "step": 30,
+  "stepData": 10,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T12:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "hour",
+  "dateTimeUnitData": "minute",
+  "majorDateTimeUnit": "day",
+  "majorFormat": "DD",
+  "minorFormat": "t",
+  "step": 2,
+  "stepData": 20,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-24T02:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "hour",
+  "dateTimeUnitData": "hour",
+  "majorDateTimeUnit": "day",
+  "majorFormat": "DD",
+  "minorFormat": "t",
+  "step": 6,
+  "stepData": 2,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-02-18T02:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "day",
+  "dateTimeUnitData": "hour",
+  "majorDateTimeUnit": "month",
+  "majorFormat": "MMM, yyyy",
+  "minorFormat": "d",
+  "step": 2,
+  "stepData": 12,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2023-05-18T02:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "week",
+  "dateTimeUnitData": "day",
+  "majorDateTimeUnit": "month",
+  "majorFormat": "MMM, yyyy",
+  "minorFormat": "d",
+  "step": 1,
+  "stepData": 2,
+}
+`;
+
+exports[`Step and time scale for different start date, end dates and different intervals > timestamps: '2023-01-20T14:15:00.000Z' - '2025-05-18T02:00:00.000Z' where given time interval 'auto' 1`] = `
+{
+  "dateTimeUnit": "month",
+  "dateTimeUnitData": "week",
+  "majorDateTimeUnit": "year",
+  "majorFormat": "yyyy",
+  "minorFormat": "MMM",
+  "step": 2,
+  "stepData": 2,
+}
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:46.000Z' - '2023-01-20T14:18:12.001Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15:14",
+    "timestamp": "2023-01-20T14:14:45.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:15",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:16",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:17",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:18",
+    "timestamp": "2023-01-20T14:18:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:46.000Z' - '2023-01-20T14:18:12.001Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "45"",
+    "timestamp": "2023-01-20T14:14:45.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15"",
+    "timestamp": "2023-01-20T14:15:15.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:15:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45"",
+    "timestamp": "2023-01-20T14:15:45.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15"",
+    "timestamp": "2023-01-20T14:16:15.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:16:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45"",
+    "timestamp": "2023-01-20T14:16:45.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15"",
+    "timestamp": "2023-01-20T14:17:15.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:17:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45"",
+    "timestamp": "2023-01-20T14:17:45.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:18:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:46.000Z' - '2023-01-20T14:26:22.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15h",
+    "timestamp": "2023-01-20T14:14:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:46.000Z' - '2023-01-20T14:26:22.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "14’",
+    "timestamp": "2023-01-20T14:14:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "16’",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "17’",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18’",
+    "timestamp": "2023-01-20T14:18:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "19’",
+    "timestamp": "2023-01-20T14:19:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T14:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21’",
+    "timestamp": "2023-01-20T14:21:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "22’",
+    "timestamp": "2023-01-20T14:22:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "23’",
+    "timestamp": "2023-01-20T14:23:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "24’",
+    "timestamp": "2023-01-20T14:24:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "25’",
+    "timestamp": "2023-01-20T14:25:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "26’",
+    "timestamp": "2023-01-20T14:26:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:52.000Z' - '2023-01-20T15:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15h",
+    "timestamp": "2023-01-20T14:10:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:52.000Z' - '2023-01-20T15:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "10’",
+    "timestamp": "2023-01-20T14:10:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T14:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "25’",
+    "timestamp": "2023-01-20T14:25:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T14:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "35’",
+    "timestamp": "2023-01-20T14:35:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40’",
+    "timestamp": "2023-01-20T14:40:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-01-20T14:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50’",
+    "timestamp": "2023-01-20T14:50:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "55’",
+    "timestamp": "2023-01-20T14:55:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:52.000Z' - '2023-01-20T17:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15h",
+    "timestamp": "2023-01-20T14:10:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 16h",
+    "timestamp": "2023-01-20T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 17h",
+    "timestamp": "2023-01-20T16:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:14:52.000Z' - '2023-01-20T17:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "10’",
+    "timestamp": "2023-01-20T14:10:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T14:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T14:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40’",
+    "timestamp": "2023-01-20T14:40:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50’",
+    "timestamp": "2023-01-20T14:50:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10’",
+    "timestamp": "2023-01-20T15:10:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T15:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T15:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40’",
+    "timestamp": "2023-01-20T15:40:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50’",
+    "timestamp": "2023-01-20T15:50:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T16:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10’",
+    "timestamp": "2023-01-20T16:10:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T16:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T16:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40’",
+    "timestamp": "2023-01-20T16:40:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50’",
+    "timestamp": "2023-01-20T16:50:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T14:18:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15:15",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:16",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:17",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T14:18:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:15:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:15:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:15:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:15:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:15:50.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:16:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:16:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:16:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:16:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:16:50.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:17:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:17:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:17:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:17:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:17:50.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T15:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15h",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-20T15:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-01-20T14:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20’",
+    "timestamp": "2023-01-20T14:20:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "25’",
+    "timestamp": "2023-01-20T14:25:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T14:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "35’",
+    "timestamp": "2023-01-20T14:35:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40’",
+    "timestamp": "2023-01-20T14:40:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-01-20T14:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50’",
+    "timestamp": "2023-01-20T14:50:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "55’",
+    "timestamp": "2023-01-20T14:55:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T00:15:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15h",
+    "timestamp": "2023-01-20T14:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 16h",
+    "timestamp": "2023-01-20T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 17h",
+    "timestamp": "2023-01-20T16:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 18h",
+    "timestamp": "2023-01-20T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 19h",
+    "timestamp": "2023-01-20T18:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 20h",
+    "timestamp": "2023-01-20T19:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 21h",
+    "timestamp": "2023-01-20T20:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 22h",
+    "timestamp": "2023-01-20T21:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 23h",
+    "timestamp": "2023-01-20T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21 jan 2023, 0h",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21 jan 2023, 1h",
+    "timestamp": "2023-01-21T00:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T00:15:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "0’",
+    "timestamp": "2023-01-20T14:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T14:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T15:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T16:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T16:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T17:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T18:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T18:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T19:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T19:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T20:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T20:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T21:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T21:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T22:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-01-20T23:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-01-21T00:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T12:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023",
+    "timestamp": "2023-01-20T13:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21 jan 2023",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-21T12:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "14:00",
+    "timestamp": "2023-01-20T13:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "16:00",
+    "timestamp": "2023-01-20T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-01-20T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20:00",
+    "timestamp": "2023-01-20T19:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "22:00",
+    "timestamp": "2023-01-20T21:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "02:00",
+    "timestamp": "2023-01-21T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "04:00",
+    "timestamp": "2023-01-21T03:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-01-21T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "08:00",
+    "timestamp": "2023-01-21T07:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10:00",
+    "timestamp": "2023-01-21T09:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-01-21T11:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-24T02:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023",
+    "timestamp": "2023-01-20T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21 jan 2023",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "22 jan 2023",
+    "timestamp": "2023-01-21T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "23 jan 2023",
+    "timestamp": "2023-01-22T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "24 jan 2023",
+    "timestamp": "2023-01-23T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-01-24T02:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "12:00",
+    "timestamp": "2023-01-20T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-01-20T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-01-21T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-01-21T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-01-21T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-01-21T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-01-22T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-01-22T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-01-22T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-01-22T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-01-23T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-01-23T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-01-23T17:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-01-23T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-02-18T02:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "jan, 2023",
+    "timestamp": "2023-01-18T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "feb, 2023",
+    "timestamp": "2023-01-31T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-02-18T02:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "19",
+    "timestamp": "2023-01-18T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "21",
+    "timestamp": "2023-01-20T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "23",
+    "timestamp": "2023-01-22T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "25",
+    "timestamp": "2023-01-24T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "27",
+    "timestamp": "2023-01-26T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "29",
+    "timestamp": "2023-01-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "31",
+    "timestamp": "2023-01-30T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "2",
+    "timestamp": "2023-02-01T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "4",
+    "timestamp": "2023-02-03T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "6",
+    "timestamp": "2023-02-05T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "8",
+    "timestamp": "2023-02-07T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10",
+    "timestamp": "2023-02-09T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12",
+    "timestamp": "2023-02-11T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "14",
+    "timestamp": "2023-02-13T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "16",
+    "timestamp": "2023-02-15T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18",
+    "timestamp": "2023-02-17T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-05-18T02:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "jan, 2023",
+    "timestamp": "2023-01-15T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "feb, 2023",
+    "timestamp": "2023-02-05T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mrt, 2023",
+    "timestamp": "2023-03-05T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "apr, 2023",
+    "timestamp": "2023-04-02T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mei, 2023",
+    "timestamp": "2023-04-30T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2023-05-18T02:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "16",
+    "timestamp": "2023-01-15T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "23",
+    "timestamp": "2023-01-22T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30",
+    "timestamp": "2023-01-29T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "6",
+    "timestamp": "2023-02-05T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "13",
+    "timestamp": "2023-02-12T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20",
+    "timestamp": "2023-02-19T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "27",
+    "timestamp": "2023-02-26T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "6",
+    "timestamp": "2023-03-05T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "13",
+    "timestamp": "2023-03-12T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20",
+    "timestamp": "2023-03-19T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "27",
+    "timestamp": "2023-03-26T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "3",
+    "timestamp": "2023-04-02T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10",
+    "timestamp": "2023-04-09T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "17",
+    "timestamp": "2023-04-16T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "24",
+    "timestamp": "2023-04-23T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "1",
+    "timestamp": "2023-04-30T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "8",
+    "timestamp": "2023-05-07T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15",
+    "timestamp": "2023-05-14T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2025-05-18T02:00:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "2023",
+    "timestamp": "2022-12-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "2024",
+    "timestamp": "2023-12-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "2025",
+    "timestamp": "2024-12-31T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:00.000Z' - '2025-05-18T02:00:00.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "jan",
+    "timestamp": "2022-12-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mrt",
+    "timestamp": "2023-02-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mei",
+    "timestamp": "2023-04-30T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "jul",
+    "timestamp": "2023-06-30T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "sep",
+    "timestamp": "2023-08-31T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "nov",
+    "timestamp": "2023-10-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "jan",
+    "timestamp": "2023-12-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mrt",
+    "timestamp": "2024-02-29T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mei",
+    "timestamp": "2024-04-30T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "jul",
+    "timestamp": "2024-06-30T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "sep",
+    "timestamp": "2024-08-31T22:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "nov",
+    "timestamp": "2024-10-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "jan",
+    "timestamp": "2024-12-31T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mrt",
+    "timestamp": "2025-02-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "mei",
+    "timestamp": "2025-04-30T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:18.000Z' - '2023-01-20T14:17:53.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "20 jan 2023, 15:15",
+    "timestamp": "2023-01-20T14:15:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:16",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20 jan 2023, 15:17",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-01-20T14:15:18.000Z' - '2023-01-20T14:17:53.000Z' 2`] = `
+[
+  {
+    "inRange": false,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:15:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:15:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:15:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:15:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:15:50.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:16:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:16:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:16:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:16:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:16:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:16:50.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0"",
+    "timestamp": "2023-01-20T14:17:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10"",
+    "timestamp": "2023-01-20T14:17:10.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "20"",
+    "timestamp": "2023-01-20T14:17:20.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30"",
+    "timestamp": "2023-01-20T14:17:30.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "40"",
+    "timestamp": "2023-01-20T14:17:40.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "50"",
+    "timestamp": "2023-01-20T14:17:50.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-03-25T23:00:00.000Z' - '2023-03-26T02:30:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "26 mrt 2023, 0h",
+    "timestamp": "2023-03-25T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "26 mrt 2023, 1h",
+    "timestamp": "2023-03-26T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "26 mrt 2023, 3h",
+    "timestamp": "2023-03-26T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "26 mrt 2023, 4h",
+    "timestamp": "2023-03-26T02:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-03-25T23:00:00.000Z' - '2023-03-26T02:30:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-03-25T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-03-25T23:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-03-25T23:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-03-25T23:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-03-26T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-03-26T00:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-03-26T00:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-03-26T00:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-03-26T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-03-26T01:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-03-26T01:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-03-26T01:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-03-26T02:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-03-26T02:15:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-03-25T23:00:00.000Z' - '2023-03-26T17:30:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "26 mrt 2023",
+    "timestamp": "2023-03-25T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-03-25T23:00:00.000Z' - '2023-03-26T17:30:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "00:00",
+    "timestamp": "2023-03-25T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "01:00",
+    "timestamp": "2023-03-26T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "03:00",
+    "timestamp": "2023-03-26T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "04:00",
+    "timestamp": "2023-03-26T02:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "05:00",
+    "timestamp": "2023-03-26T03:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-03-26T04:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "07:00",
+    "timestamp": "2023-03-26T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "08:00",
+    "timestamp": "2023-03-26T06:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "09:00",
+    "timestamp": "2023-03-26T07:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10:00",
+    "timestamp": "2023-03-26T08:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "11:00",
+    "timestamp": "2023-03-26T09:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-03-26T10:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "13:00",
+    "timestamp": "2023-03-26T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "14:00",
+    "timestamp": "2023-03-26T12:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15:00",
+    "timestamp": "2023-03-26T13:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "16:00",
+    "timestamp": "2023-03-26T14:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "17:00",
+    "timestamp": "2023-03-26T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-03-26T16:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "19:00",
+    "timestamp": "2023-03-26T17:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-10-28T23:00:00.000Z' - '2023-10-29T03:30:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "29 okt 2023, 1h",
+    "timestamp": "2023-10-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "29 okt 2023, 2h",
+    "timestamp": "2023-10-29T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "29 okt 2023, 2h",
+    "timestamp": "2023-10-29T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "29 okt 2023, 3h",
+    "timestamp": "2023-10-29T02:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "29 okt 2023, 4h",
+    "timestamp": "2023-10-29T03:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-10-28T23:00:00.000Z' - '2023-10-29T03:30:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-10-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-10-28T23:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-10-28T23:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-10-28T23:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-10-29T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-10-29T00:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-10-29T00:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-10-29T00:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-10-29T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-10-29T01:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-10-29T01:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-10-29T01:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-10-29T02:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-10-29T02:15:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "30’",
+    "timestamp": "2023-10-29T02:30:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "45’",
+    "timestamp": "2023-10-29T02:45:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "0’",
+    "timestamp": "2023-10-29T03:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15’",
+    "timestamp": "2023-10-29T03:15:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-10-28T23:00:00.000Z' - '2023-10-29T17:30:00.000Z' 1`] = `
+[
+  {
+    "inRange": false,
+    "label": "29 okt 2023",
+    "timestamp": "2023-10-28T23:00:00.000Z",
+  },
+]
+`;
+
+exports[`Test axis outputs with time interval $dateTimeUnit and step $step > timestamps: '2023-10-28T23:00:00.000Z' - '2023-10-29T17:30:00.000Z' 2`] = `
+[
+  {
+    "inRange": true,
+    "label": "01:00",
+    "timestamp": "2023-10-28T23:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "02:00",
+    "timestamp": "2023-10-29T00:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "02:00",
+    "timestamp": "2023-10-29T01:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "03:00",
+    "timestamp": "2023-10-29T02:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "04:00",
+    "timestamp": "2023-10-29T03:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "05:00",
+    "timestamp": "2023-10-29T04:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "06:00",
+    "timestamp": "2023-10-29T05:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "07:00",
+    "timestamp": "2023-10-29T06:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "08:00",
+    "timestamp": "2023-10-29T07:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "09:00",
+    "timestamp": "2023-10-29T08:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "10:00",
+    "timestamp": "2023-10-29T09:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "11:00",
+    "timestamp": "2023-10-29T10:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "12:00",
+    "timestamp": "2023-10-29T11:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "13:00",
+    "timestamp": "2023-10-29T12:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "14:00",
+    "timestamp": "2023-10-29T13:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "15:00",
+    "timestamp": "2023-10-29T14:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "16:00",
+    "timestamp": "2023-10-29T15:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "17:00",
+    "timestamp": "2023-10-29T16:00:00.000Z",
+  },
+  {
+    "inRange": true,
+    "label": "18:00",
+    "timestamp": "2023-10-29T17:00:00.000Z",
+  },
+]
+`;

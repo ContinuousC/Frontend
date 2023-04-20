@@ -1,0 +1,24 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: c9c-frontend
+  description: Frontend for c9c
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: production
+  owner: developers
+  system: continuousc-core
+  dependsOn:
+    - component:jaeger
+    - component:grafana
+    - component:opensearch
+    - component:prometheus
+    - component:relation-graph-engine
+  consumesApis:
+    - relation-graph-api

@@ -1,0 +1,19 @@
+api: 0.1.12
+artifacts:
+  continuousc-frontend-image:
+    type: docker
+    pre_commit:
+      - run: npm install @continuousc/relation-graph
+        files:
+          - package-lock.json
+    pre_tag:
+      - run: |
+          DOCKER_BUILDKIT=1 docker build --ssh default --secret id=npmrc,src=$HOME/.npmrc --target production -t continuousc-frontend:$VC_ARTIFACT_VERSION . &&
+          docker tag continuousc-frontend:$VC_ARTIFACT_VERSION gitea.contc/continuousc/frontend:$VC_ARTIFACT_VERSION &&
+          docker push gitea.contc/continuousc/frontend:$VC_ARTIFACT_VERSION
+    source:
+      type: npm
+      root: .
+      dependencies:
+        - name: "@continuousc/relation-graph"
+          artifact: relation-graph-wasm

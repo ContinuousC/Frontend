@@ -1,0 +1,183 @@
+################################################################################
+# Copyright ContinuousC. Licensed under the "Elastic License 2.0".             #
+################################################################################
+
+version: v2beta1
+name: continuousc-frontend
+
+pullSecrets:
+  gitea:
+    registry: gitea.contc
+
+vars:
+  SSH_KEYDIR:
+    source: env
+    default: ~/.ssh
+
+dev:
+  frontend:
+    imageSelector: gitea.contc/continuousc/frontend
+    containers:
+      frontend:
+        devImage: node:lts-slim
+        workingDir: /app
+        command:
+          - /bin/sh
+          - -c
+          - "npm i && npm run dev"
+        logs: {}
+        resources:
+          requests:
+            cpu: "0.3"
+            memory: 512Mi
+        sync:
+          - path: package.json:/app/package.json
+            printLogs: true
+            startContainer: true
+            disableDownload: true
+            onUpload:
+              restartContainer: true
+          - path: package-lock.json:/app/package-lock.json
+            printLogs: true
+            startContainer: true
+            disableDownload: true
+            onUpload:
+              restartContainer: true
+          - path: .:/app
+            excludePaths:
+              - /.git
+              - /.env
+              - /.devspace
+              - /.vscode
+              - /devspace.yaml
+              - /node_modules
+              - /dist
+              - /dist-ssr
+              - /package.json
+              - /package-lock.json
+              - "*~"
+            printLogs: true
+            startContainer: true
+            disableDownload: true
+          # - path: src/Frontend/relation-graph:/app/node_modules/relation-graph
+          #   printLogs: true
+          #   startContainer: true
+          #   waitInitialSync: true
+          #   disableDownload: true
+          - path: ~/.npmrc:/root/.npmrc
+            startContainer: true
+            disableDownload: true
+        persistPaths:
+          - path: /app/node_modules
+            volumePath: node_modules
+            skipPopulate: true
+          - path: /app/relation-graph-wasm
+            volumePath: relation-graph-wasm
+            skipPopulate: true
+          - path: /app/relation-graph-api
+            volumePath: relation-graph-api
+            skipPopulate: true
+
+profiles:
+  - name: wasm
+    activation:
+      - env:
+          RELATION_GRAPH_WASM: ".+"
+    merge:
+      dev:
+        frontend:
+          containers:
+            frontend:
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  apt update && apt install -y jq \
+                  && jq '. * {"dependencies": { "@continuousc/relation-graph": "file:relation-graph-wasm" } }' \
+                     < package.json > package.json.new \
+                  && mv package.json.new package.json && npm i && npm run dev
+            wasm-builder:
+              devImage: gitea.contc/controlplane/rust-builder:0.2.0
+              workingDir: /root/source/RelationGraph
+              command:
+                - /usr/bin/ssh-agent
+                - /bin/bash
+                - -c
+                - |
+                  ssh-add ~/.ssh/id_ed25519
+                  /root/.cargo/bin/cargo watch --why \
+                    --ignore openapi.json \
+                    --ignore engine/ts \
+                    --ignore wasm/pkg \
+                    --shell 'wasm-pack build wasm -d pkg/build --release --target web --reference-types --weak-refs \
+                          && mv wasm/pkg/build/* wasm/pkg/'
+              logs: {}
+              resources:
+                requests:
+                  cpu: "0.3"
+                  memory: 512Mi
+              env:
+                - name: CARGO_TERM_COLOR
+                  value: always
+              sync:
+                - path: ../RelationGraph:/root/source/RelationGraph
+                  excludePaths:
+                    - /.git
+                    - /.devspace
+                    - /.vscode
+                    - /devspace.yaml
+                    - /provisioned
+                    - /target
+                    - /wasm/pkg
+                    - "*~"
+                  startContainer: true
+                  disableDownload: true
+                  printLogs: true
+                - path: ../PrometheusSchema:/root/source/PrometheusSchema
+                  excludePaths:
+                    - /.git
+                    - /.devspace
+                    - /.vscode
+                    - /devspace.yaml
+                    - /target
+                    - "*~"
+                  startContainer: true
+                  disableDownload: true
+                  printLogs: true
+                - path: ../JaegerAnomalyDetection:/root/source/JaegerAnomalyDetection
+                  excludePaths:
+                    - /.git
+                    - /.devspace
+                    - /.vscode
+                    - /devspace.yaml
+                    - /target
+                    - "*~"
+                  startContainer: true
+                  disableDownload: true
+                  printLogs: true
+                - path: ${SSH_KEYDIR}/id_ed25519:/root/.ssh/id_ed25519
+                  startContainer: true
+                  disableDownload: true
+              persistPaths:
+                - path: /root/.cargo/registry
+                  volumePath: cargo-registry
+                  skipPopulate: true
+                - path: /root/.cache/.wasm-pack
+                  volumePath: wasm-pack
+                  skipPopulate: true
+                - path: /root/source/RelationGraph/target
+                  volumePath: cargo-target
+                  skipPopulate: true
+                - path: /root/source/RelationGraph/wasm/pkg
+                  volumePath: relation-graph-wasm
+                  skipPopulate: true
+                - path: /root/source/RelationGraph/engine/ts
+                  volumePath: relation-graph-api
+                  skipPopulate: true
+
+          patches:
+            - op: add
+              path: spec.containers
+              value:
+                name: wasm-builder
+                image: gitea.contc/controlplane/rust-builder:0.2.0

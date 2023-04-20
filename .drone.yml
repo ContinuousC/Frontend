@@ -1,0 +1,142 @@
+kind: pipeline
+type: docker
+name: continuousc-frontend-image
+
+# trigger:
+#   ref:
+#     - refs/tags/continuousc-frontend-image-*
+
+clone:
+  skip_verify: true
+
+environment:
+  DOCKER_HOST: unix:///var/run/docker.sock
+  BUILDKIT_NO_CLIENT_TOKEN: 1
+  DOCKER_BUILDKIT: 1
+
+steps:
+  - name: builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    environment:
+      NPMRC:
+        from_secret: npmrc
+    settings:
+      daemon_off: true
+      dry_run: true
+      secret: id=npmrc,env=NPMRC
+      repo: continuousc-frontend-builder
+      target: builder
+
+  - name: test
+    depends_on:
+      - builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: continuousc-frontend-test
+      target: test
+
+  - name: audit
+    depends_on:
+      - builder
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: continuousc-frontend-audit
+      target: audit
+
+  - name: build
+    depends_on:
+      - test
+      - audit
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: continuousc-frontend
+      target: production
+
+  - name: push-gitea-dev
+    when:
+      ref:
+        - refs/heads/main
+    depends_on:
+      - build
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      repo: gitea.contc/continuousc/frontend
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - latest
+      force_tag: true
+      target: production
+      cache_from:
+        - continuousc-frontend
+
+  - name: push-gitea
+    when:
+      ref:
+        - refs/tags/continuousc-frontend-image_v*
+    depends_on:
+      - build
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    settings:
+      daemon_off: true
+      registry: gitea.contc
+      repo: gitea.contc/continuousc/frontend
+      username: ci
+      password:
+        from_secret: gitea-docker-registry-password
+      tags:
+        - latest
+        - ${DRONE_TAG#continuousc-frontend-image_v}
+      force_tag: true
+      target: production
+      cache_from:
+        - continuousc-frontend
+
+  - name: docs
+    image: plugins/docker
+    volumes:
+      - name: dockerd
+        path: /var/run/docker.sock
+    failure: ignore
+    environment:
+      MINIO_CREDENTIALS:
+        from_secret: MINIO_CREDENTIALS
+    settings:
+      daemon_off: true
+      dry_run: true
+      repo: continuousc-frontend-docs
+      target: docs
+      secrets_from_env:
+        - minio_credentials=MINIO_CREDENTIALS
+
+volumes:
+  - name: dockerd
+    host:
+      path: /var/run/docker.sock
